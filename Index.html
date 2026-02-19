@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday Arun 🎉</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+            background-size: 400% 400%;
+            animation: gradientBG 8s ease infinite;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        .container {
+            margin-top: 80px;
+        }
+
+        h1 {
+            font-size: 50px;
+            animation: bounce 2s infinite;
+        }
+
+        .cake {
+            font-size: 70px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            margin-top: 25px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            background: white;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        #surpriseImage {
+            margin-top: 30px;
+            width: 300px;
+            border-radius: 20px;
+            display: none;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎉 Happy Birthday Arun 🎉</h1>
+    <p>Wishing you a day full of happiness and success!</p>
+    <div class="cake">🎂</div>
+    <button onclick="showImage()">Click for Surprise 🎁</button>
+
+    <!-- Image -->
+    <img id="surpriseImage" src="download.jpg" alt="Surprise Image">
+</div>
+
+<script>
+    function showImage() {
+        document.getElementById("surpriseImage").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
